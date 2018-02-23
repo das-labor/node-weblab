@@ -13,5 +13,9 @@
   "author": "developer",
   "scripts": {
     "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/das-labor/node-weblab.git"
   }
 }
