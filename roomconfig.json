@@ -240,7 +240,7 @@
                                 "subchannels": [
                                     {"type":"swt","port":1,"data0":0,"data1":2,"action":2,"response_srcport":3,"response_bit":2},
                                     {"type":"swt","port":1,"data0":0,"data1":3,"action":2,"response_srcport":3,"response_bit":3},
-                                    {"type":"swt","port":1,"data0":0,"data1":3,"action":2,"response_srcport":3,"response_bit":3}
+                                    {"type":"sld","port":1,"data0":1,"data1":1,"action":2,"response_srcport":3,"response_byte":2}
                                     ]
                             },
                             {
