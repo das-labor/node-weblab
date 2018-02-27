@@ -236,45 +236,28 @@
                     "name": "Bastelcmd",
                     "channels": [
                             {
-                                "name": "Basteltische Mitte #1",
+                                "name": "Basteltische",
                                 "subchannels": [
-                                    {"type":"swt","port":1,"data0":0,"data1":1,"action":2,"response_srcport":3,"response_bit":1}
-                                    ]
-                            },
-                            {
-                                "name": "Basteltische Mitte #2",
-                                "subchannels": [
-                                    {"type":"swt","port":1,"data0":0,"data1":2,"action":2,"response_srcport":3,"response_bit":2}
-                                    ]
-                            },
-                            {
-                                "name": "Basteltische Fenster #1",
-                                "subchannels": [
+                                    {"type":"swt","port":1,"data0":0,"data1":2,"action":2,"response_srcport":3,"response_bit":2},
+                                    {"type":"swt","port":1,"data0":0,"data1":3,"action":2,"response_srcport":3,"response_bit":3},
                                     {"type":"swt","port":1,"data0":0,"data1":3,"action":2,"response_srcport":3,"response_bit":3}
                                     ]
                             },
                             {
-                                "name": "Basteltische Fenster #2",
-                                "subchannels": [
-                                    {"type":"swt","port":1,"data0":0,"data1":4,"action":2,"response_srcport":3,"response_bit":4}
-                                    ]
-                            },
-                            {
-                                "name": "Große Neon Fenster",
+                                "name": "LED-Panel Orgaschrank",
                                 "subchannels": [
                                     {"type":"swt","port":1,"data0":0,"data1":5,"action":2,"response_srcport":3,"response_bit":5},
                                     {"type":"sld","port":1,"data0":1,"data1":0,"action":2,"response_srcport":3,"response_byte":1}
                                     ]
                             },
                             {
-                                "name": "Große Neon Mitte",
+                                "name": "Neon Mitte",
                                 "subchannels": [
-                                    {"type":"swt","port":1,"data0":0,"data1":6,"action":2,"response_srcport":3,"response_bit":6},
-                                    {"type":"sld","port":1,"data0":1,"data1":1,"action":2,"response_srcport":3,"response_byte":2}
+                                    {"type":"swt","port":1,"data0":0,"data1":6,"action":2,"response_srcport":3,"response_bit":6}
                                     ]
                             },
                             {
-                                "name": "Große Neon Drucker",
+                                "name": "Neon Laser",
                                 "subchannels": [
                                     {"type":"swt","port":1,"data0":0,"data1":7,"action":2,"response_srcport":3,"response_bit":7},
                                     {"type":"sld","port":1,"data0":1,"data1":2,"action":2,"response_srcport":3,"response_byte":3}
