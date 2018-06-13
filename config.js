@@ -17,8 +17,8 @@ var read_config = function () {
 		config = JSON.parse(data);
 		id_counter = 0;
 		// prepare objects for fast access
-		for (var i in config.room) {
-			var room = config.room[i];
+		for (var i in config.rooms) {
+			var room = config.rooms[i];
 			room.channels = [];
 			for (var j in room.devices) {
 				var device = room.devices[j];
