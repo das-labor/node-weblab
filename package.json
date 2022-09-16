@@ -2,6 +2,7 @@
   "name": "NodeWeblabcontrol",
   "version": "0.0.1",
   "description": "Controll Labor automatisation",
+  "author": "developer",
   "dependencies": {
     "socket.io": "~1",
     "express": ">=4.5",
@@ -10,7 +11,9 @@
     "jade": "latest",
     "mpd": "latest"
   },
-  "author": "developer",
+  "engines": {
+    "node": ">=8.11.0"
+  },
   "scripts": {
     "start": "node app.js"
   },
