@@ -1,7 +1,7 @@
 var net = require('net');
 var conf = require('./config.js');
 var can_client;
-var rawdata = new Buffer(0);
+var rawdata = Buffer.alloc(0);
 var bytesRead = 0;
 
 var EventEmitter = require('events').EventEmitter;
@@ -73,11 +73,11 @@ var CANPacket = function () {
     this.destination_addr = 0;
     this.destination_port = 0;
     this.dlc = 0;
-    this.data = new Buffer(8);
+    this.data = Buffer.alloc(8);
 
     this.senddata = function () {
         var packetlength = this.dlc + 7; // dlc, 4 byte address / port, 2 byte tcp header
-        var buffer = new Buffer(packetlength);
+        var buffer = Buffer.alloc(packetlength);
         buffer[0] = packetlength - 2; // len - tcp header
         buffer[1] = 0x11; // tcp packet
         buffer[2] = this.destination_addr;
