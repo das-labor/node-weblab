@@ -4,7 +4,7 @@
   "description": "Controll Labor automatisation",
   "author": "developer",
   "dependencies": {
-    "socket.io": "~1",
+    "socket.io": "~2",
     "express": ">=4.5",
     "compression": "~1",
     "method-override": "~1",
