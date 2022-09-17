@@ -1,7 +1,7 @@
 {
-    "httpport": 80,
-    "canconfig": {
-           "port": 2342,
-           "hostname": "localhost"
-    }
+  "httpport": 80,
+  "canconfig": {
+    "port": 2342,
+    "hostname": "weblab.lan.das-labor.org"
+  }
 }
