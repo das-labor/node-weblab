@@ -17,7 +17,7 @@ block content
         ul.nav.nav-tabs
           obj = {'tabVortrag': 'Vortragsraum', 'tabLounge': 'Lounge', 'tabBastel': 'Bastelraum', 'tabKueche': 'Küche', 'tabKeller': 'Keller'}
           each val, key in obj
-            li.active: a(href='##{key}:', data-toggle='tab') #{val}
+            li.active: a(href='#' + key + ':', data-toggle='tab') #{val}
         div.tab-content
           div#tabVortrag.tab-pane.active
 

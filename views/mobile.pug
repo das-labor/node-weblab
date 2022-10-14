@@ -29,6 +29,6 @@ block content
           ul
             each room, i in rooms
               if i === 0
-                li: a.ui-btn-active.ui-state-persist(href='#{room.name}') #{room.name}
+                li: a.ui-btn-active.ui-state-persist(href=room.name) #{room.name}
               else
-                li: a(href='#{room.name}') #{room.name}
+                li: a(href=room.name) #{room.name}

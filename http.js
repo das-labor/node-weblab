@@ -13,10 +13,9 @@ app.use(methodOverride());
 app.use(compress());
 app.use(express.static(__dirname + '/public', {maxAge: oneDay}));
 
-// jade setup
-app.set('views', __dirname + '/views')
-app.set('view engine', 'jade'); // Set jade as default render engine
-app.locals.pretty = true; // format output of jade
+// pug setup
+app.set('view engine', 'pug'); // Set pug as default render engine
+app.locals.pretty = true; // format output of pug
 
 app.get('/', function (req, res) {
     res.render('desktop', {
