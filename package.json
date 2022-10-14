@@ -4,12 +4,14 @@
   "description": "Controll Labor automatisation",
   "author": "developer",
   "dependencies": {
-    "socket.io": "~2",
-    "express": ">=4.5",
     "compression": "~1",
-    "method-override": "~1",
+    "express": ">=4.5",
+    "ipaddr.js": "^2.0.1",
     "jade": "latest",
-    "mpd": "latest"
+    "method-override": "~1",
+    "mpd": "latest",
+    "net-snmp": "^3.8.3",
+    "socket.io": "~2"
   },
   "engines": {
     "node": ">=8.11.0"

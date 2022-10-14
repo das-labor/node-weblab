@@ -12,6 +12,19 @@ socket.on('error', function (e) {
 	console.log('System', e ? e : 'An unknown error occurred');
 } );
 
+socket.on('UpdateTab', function(data) {
+	if (data === undefined) {
+		return;
+	}
+
+	let sta_name = data;
+
+	// todo verify this works for all STAs. maybe move to backend and map statically through roomconfig.json
+	let tab_id = "tab" + sta_name;
+
+	$('.nav-tabs a[href="#' + tab_id + '"]').tab('show');
+});
+
 socket.on('UpdateGUI', function(data) {
 	for (var i in data) {
 		var subchannel = data[i];

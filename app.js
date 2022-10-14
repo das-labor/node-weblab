@@ -5,6 +5,9 @@ var io = require('socket.io').listen(http.server);
 var mpd = require('mpd'),
     cmd = mpd.cmd;
 
+let wifi = require('./wifi-assoc.js');
+const ipaddr = require('ipaddr.js');
+
 //io.enable('browser client minification');  // send minified client
 //io.enable('browser client etag');          // apply etag caching logic based on version number
 //io.enable('browser client gzip');          // gzip the file
@@ -122,6 +125,15 @@ io.sockets.on('connection', function (socket) {
             }
         }
         socket.emit('UpdateGUI', clientChannels);
+
+        let parsed = ipaddr.process(socket.handshake.address);
+        //console.log(parsed.toString());
+        // TODO: verify how/if this works with v6 addrs, otherwise only do this for v4
+        wifi.lookup(parsed.toString()).catch(console.error).then((val) => {
+            console.log("determined sta = " + val);
+            if (val)
+                socket.emit('UpdateTab', val);
+        });
     });
     socket.on('SetValue', function (data) {
         console.log("GUI -> node: " + data.fkt + " " + data.dev + " " + data.val);
